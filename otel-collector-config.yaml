@@ -5,7 +5,7 @@ receivers:
       http:
 exporters:
   jaeger:
-    endpoint: jaeger:14250
+    endpoint: jaeger:16686
     tls:
       insecure: true
 service:
