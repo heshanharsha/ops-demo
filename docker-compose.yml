@@ -5,9 +5,10 @@ services:
     image: jaegertracing/all-in-one:latest
     ports:
       - '16686:16686'
+      - '14250'
   collector:
     hostname: otlp
-    image: otel/opentelemetry-collector-contrib:latest
+    image: otel/opentelemetry-collector:latest
     command: ['--config=/etc/otel-collector-config.yaml']
     volumes:
       - ./otel-collector-config.yaml:/etc/otel-collector-config.yaml
