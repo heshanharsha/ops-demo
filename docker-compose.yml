@@ -14,4 +14,4 @@ services:
     volumes:
       - ./opentelemetry_module.conf:/etc/nginx/conf.d/opentelemetry_module.conf
     ports:
-      - 8080:80
+      - 8081:80
