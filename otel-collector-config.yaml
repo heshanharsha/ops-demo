@@ -5,7 +5,7 @@ receivers:
       http:
 exporters:
   otlp:
-    endpoint: localhost:14250
+    endpoint: 0.0.0.0:14250
     tls:
       insecure: true
 service:
